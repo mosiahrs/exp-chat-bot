@@ -13,15 +13,3 @@ function recebeEntrada() {
     criarFalaHuman(entrada)
     criarFalaBot(interacoesBot[entrada])
 }
-
-
-
-
-
-
-
-
-
-
-
-

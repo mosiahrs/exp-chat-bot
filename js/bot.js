@@ -28,4 +28,3 @@ const canalSugestoes =
         "Opção 3",
         "Opção 4"
     ]
-
