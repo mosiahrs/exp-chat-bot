@@ -1,0 +1,37 @@
+.AvatarRobot {
+    width: 90px;
+    height: 90px;
+    border: 2px solid darkgrey;
+    border-radius: 100vmax;
+    background-color: rgba(46, 166, 214, 0.842);
+    position: fixed;
+    bottom: 45px;
+    right: 25px;
+    filter: drop-shadow(5px 5px 10px black);
+    cursor: pointer;
+}
+
+.textHelp {
+    position: fixed;
+    bottom: 145px;
+    right: 25px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: small;
+    font-weight: 500;
+    padding: 10px;
+    color: white;
+    width: 140px;
+    background-color: rgba(71, 73, 75, 0.836);
+}
+
+.ponta {
+    width: 0;
+    height: 0;
+    position: fixed;
+    bottom: 130px;
+    right: 110px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid rgba(71, 73, 75, 0.836);
+}

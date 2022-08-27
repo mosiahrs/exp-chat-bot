@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/icon-robot-component.css">
+    <link rel="stylesheet" href="./css/chat-component.css">
+    <link rel="stylesheet" href="css/site.css">
+    <title>Site BoT</title>
+</head>
+
+<body>
+    <main>
+
+        <section class="site" onclick="ocultarChat()">
+            <h1>SITE PARA TESTAR O BOT</h1>
+            <br>
+            <img src="https://picsum.photos/500/200" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, exercitationem quidem possimus asperiores
+                eius
+                dignissimos. Vel, temporibus architecto? Saepe necessitatibus delectus sed, earum numquam officia iusto
+                voluptatibus perspiciatis inventore amet?</p>
+            <br>
+            <img src="https://picsum.photos/450/250" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, exercitationem quidem possimus asperiores
+                eius
+                dignissimos. Vel, temporibus architecto? Saepe necessitatibus delectus sed, earum numquam officia iusto
+                voluptatibus perspiciatis inventore amet?</p>
+            <img src="https://picsum.photos/450/200" alt="">
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, exercitationem quidem possimus asperiores
+                eius
+                dignissimos. Vel, temporibus architecto? Saepe necessitatibus delectus sed, earum numquam officia iusto
+                voluptatibus perspiciatis inventore amet?</p>
+        </section>
+
+
+        <section id="chatContainer" class="ocultar">
+            <div class="display">
+                <ul class="saidaTexto">
+
+                </ul>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="input-texto" id="entradaTexto" autocomplete="off" value="" autofocus="">
+                <button type="submit" id="enviarTexto"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </section>
+
+        <section class="robotIcon">
+            <span class="textHelp">
+                Precisa de Ajuda?
+            </span>
+            <div class="ponta"></div>
+            <figure class="AvatarRobot">
+                <img id="robotFig" onclick="ocultar(), abrirMenu()" src="assets\robo-caller.png" width="90">
+                </a>
+            </figure>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/81d880f28b.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bot.js"></script>
+    <script src="js/human.js"></script>
+    <script src="js/util.js"></script>
+</body>
+
+</html>
