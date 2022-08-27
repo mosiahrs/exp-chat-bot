@@ -11,9 +11,7 @@ function recebeEntrada() {
     let entradaTexto = document.querySelector('#entradaTexto')
     let entrada = entradaTexto.value;
     criarFalaHuman(entrada)
-    if (entrada == "1") {
-        criarFalaBot(interacoesBot[1])
-    }
+    criarFalaBot(interacoesBot[entrada])
 }
 
 

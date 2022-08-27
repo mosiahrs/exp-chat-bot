@@ -10,7 +10,7 @@ const interacoesBot =
         "Seja bem vindo",
         "Canal de Atendimento",
         "Canal de Sugestões",
-        "Entrada Inválida"
+        "Criticas"
     ]
 
 const canalAtendimento =
