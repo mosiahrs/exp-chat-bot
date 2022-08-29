@@ -5,12 +5,22 @@ function criarFalaBot(entrada) {
     falaBot.textContent = `${entrada} `
 }
 
+const opcoesMenuInicial = 
+[
+    "Selecione uma das Opcoes: ",
+    "1 - Atendimento",
+    "2 - Sugestões",
+    "3 - Criticas",
+    "4 - Sair"
+]
+
 const interacoesBot =
     [
-        "Seja bem vindo",
+        "Digite um número válido",
         "Canal de Atendimento",
         "Canal de Sugestões",
-        "Criticas"
+        "Criticas",
+        "Deseja mesmo sair?"
     ]
 
 const canalAtendimento =

@@ -9,7 +9,6 @@
 
 .ocultar {
     display: none;
-    transition: 1s;
 }
 
 #chatContainer {
@@ -34,10 +33,6 @@
     padding: 15px;
 }
 
-.menuPrincipal li {
-    margin: 5px 0px 0px 15px;
-}
-
 .inputBox {
     width: 100%;
     overflow: hidden;
@@ -52,24 +47,18 @@
     border: none;
 }
 
-.inputBox #enviarTexto {
-    width: 21%;
-    height: 2rem;
-    cursor: pointer;
-    background-color: greenyellow;
-    border: 1px solid transparent;
-}
-
 #entradaTexto:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
     border: none;
 }
 
-.inputBox #enviarTexto:hover {
-    color: white;
-    text-shadow: 1px 1px 10px black;
-
+.inputBox #enviarTexto {
+    width: 21%;
+    height: 2rem;
+    cursor: pointer;
+    background-color: greenyellow;
+    border: 1px solid transparent;
 }
 
 .textoEnviado,
