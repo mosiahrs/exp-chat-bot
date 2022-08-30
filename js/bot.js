@@ -1,18 +1,17 @@
 function criarFalaBot(entrada) {
-    let falaBot = document.createElement("li")
+    let falaBot = document.createElement("p")
     saidaTexto.appendChild(falaBot)
     falaBot.classList.add('textoRecebido')
     falaBot.textContent = `${entrada} `
 }
 
-const opcoesMenuInicial = 
-[
-    "Selecione uma das Opcoes: ",
-    "1 - Atendimento",
-    "2 - Sugestões",
-    "3 - Criticas",
-    "4 - Sair"
-]
+const opcoesMenuInicial =
+    [
+        "Selecione uma das Opcoes: ",
+        "1 - Atendimento",
+        "2 - Sugestões",
+        "3 - Criticas",
+    ]
 
 const interacoesBot =
     [
@@ -25,16 +24,25 @@ const interacoesBot =
 
 const canalAtendimento =
     [
-        "Opção 1",
-        "Opção 2",
-        "Opção 3",
-        "Opção 4"
+        "Bem vindo ao Canal de atendimento, escolha opção que melhor te atenda :",
+        "1 - Linha telefônica",
+        "2 - Sinal de Internet ",
+        "3 - Assistência Técnica"
     ]
 
 const canalSugestoes =
     [
-        "Opção 1",
-        "Opção 2",
-        "Opção 3",
-        "Opção 4"
+        "Bem vindo ao Canal de Sugestões, sobre o que deseja falar :",
+        "1 - Assistência Técnica",
+        "2 - Sinal de Internet ",
+        "3 - Linha telefônica"
     ]
+
+const canalCriticas =
+    [
+        "Bem vindo ao Canal de Criticas, sobre o que deseja falar :",
+        "1 - Assistência Técnica",
+        "2 - Sinal de Internet ",
+        "3 - Linha telefônica"
+    ]
+
