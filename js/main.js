@@ -1,16 +1,7 @@
 const saidaTexto = document.querySelector(".saidaTexto");
 const botaoEnviar = document.getElementById('enviarTexto');
 const robotIcon = document.getElementById('robotIcon');
-const imgRobot = document.getElementById('robotFig')
-
-entradaTexto.addEventListener('keydown', (event) => {
-    const keyName = event.key;
-    if (keyName === "Enter") {
-        recebeEntrada()
-    }
-});
-
-botaoEnviar.addEventListener('click', recebeEntrada)
+const imgRobot = document.getElementById('robotFig');
 
 function abrirMenu() {
     saidaTexto.innerHTML = " "
@@ -26,8 +17,8 @@ function recebeEntrada() {
     switch (opcao) {
         case "1":
             criarFalaHuman(opcao)
-            timerLoading = setTimeout(timerLoading, 800);
-            function timerLoading() {
+            delay = setTimeout(delay, 500);
+            function delay() {
                 for (item of canalAtendimento)
                     criarFalaBot(item)
             }
@@ -50,7 +41,14 @@ function recebeEntrada() {
                 abrirMenu()
             }
     }
-
+    limparInput();
 }
 
+botaoEnviar.addEventListener('click', recebeEntrada);
 
+entradaTexto.addEventListener('keydown', (event) => {
+    const keyName = event.key;
+    if (keyName === "Enter") {
+        recebeEntrada()
+    }
+});
