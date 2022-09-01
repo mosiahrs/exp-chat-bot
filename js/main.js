@@ -42,7 +42,7 @@ let menuPrincipal = (userInput) => {
     }
 }
 
-let SubMenu1 = (userInput) => {
+let subMenu1 = (userInput) => {
     const opcao = userInput
     switch (opcao) {
         case "1":
