@@ -5,6 +5,17 @@ function criarFalaBot(entrada) {
     falaBot.textContent = `${entrada} `
 }
 
+function retornoFalaBot(nomeArray, itemValidacao) {
+    let entradaTexto = document.querySelector('#entradaTexto')
+    let entrada = entradaTexto.value;
+    criarFalaHuman(entrada)
+    for (item of nomeArray)
+        criarFalaBot(item)
+
+    validaMenu = itemValidacao
+    console.log(validaMenu)
+}
+
 const opcoesMenuInicial =
     [
         "Selecione uma das Opcoes: ",
@@ -16,10 +27,10 @@ const opcoesMenuInicial =
 const interacoesBot =
     [
         "Digite um número válido",
-        "Canal de Atendimento",
-        "Canal de Sugestões",
-        "Criticas",
-        "Deseja mesmo sair?"
+        "Para mais informações Ligue 0800 123 1234",
+        "Deixe uma breve mensagem com sua sugestão",
+        "Deixe uma breve mensagem com sua Critica",
+        "Qual o problema com sua Linha?"
     ]
 
 const canalAtendimento =
@@ -45,4 +56,3 @@ const canalCriticas =
         "2 - Sinal de Internet ",
         "3 - Linha telefônica"
     ]
-
