@@ -9,15 +9,16 @@ function abrirMenu() {
     saidaTexto.innerHTML = " "
     for (opcao of opcoesMenuInicial)
         criarFalaBot(opcao)
+    validaMenu = 0
+    console.log(validaMenu)
 }
 
 function enviaEntrada() {
     let entradaTexto = document.querySelector('#entradaTexto')
     let entrada = entradaTexto.value;
 
-    menuPrincipal(entrada);
+    menuPrincipal(entrada)
     limparInput();
-
 }
 
 let menuPrincipal = (userInput) => {
@@ -33,29 +34,7 @@ let menuPrincipal = (userInput) => {
             retornoFalaBot(canalCriticas, 1)
             break;
         default:
-            criarFalaHuman(opcao)
-            criarFalaBot(interacoesBot[0])
-            invalida = setTimeout(entradaInvalida, 1500);
-            function entradaInvalida() {
-                abrirMenu()
-            }
-    }
-}
-
-let subMenu1 = (userInput) => {
-    const opcao = userInput
-    switch (opcao) {
-        case "1":
-            retornoFalaBot(interacoesBot, 2)
-            break;
-        case "2":
-            retornoFalaBot(interacoesBot, 2)
-            break;
-        case "3":
-            retornoFalaBot(interacoesBot, 2)
-            break;
-        default:
-            criarFalaHuman(opcao)
+            exibirEntrada(opcao)
             criarFalaBot(interacoesBot[0])
             invalida = setTimeout(entradaInvalida, 1500);
             function entradaInvalida() {
