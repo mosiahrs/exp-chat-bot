@@ -1,11 +1,7 @@
 const chatContainer = document.getElementById('chatContainer');
 
 function ocultar() {
-    chatContainer.classList.remove("ocultar")
-}
-
-function ocultarChat() {
-    chatContainer.classList.add("ocultar")
+    chatContainer.classList.toggle("ocultar")
 }
 
 function limparInput() {
