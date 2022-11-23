@@ -6,14 +6,20 @@ function criarFalaBot(entrada) {
 }
 
 function retornoFalaBot(nomeArray, itemValidacao) {
-    let entradaTexto = document.querySelector('#entradaTexto')
-    let entrada = entradaTexto.value;
-    criarFalaHuman(entrada)
+    let printOption = saidaTexto.appendChild(document.createElement("p"));
+    printOption.classList.add('textoEnviado');
+    printOption.textContent = itemValidacao
+
     for (item of nomeArray)
         criarFalaBot(item)
 
     validaMenu = itemValidacao
     console.log(validaMenu)
+}
+
+function callFalaHumana () {
+    let entr = document.querySelector('#entradaTexto').value;
+    criarFalaHuman(entr)
 }
 
 const opcoesMenuInicial =

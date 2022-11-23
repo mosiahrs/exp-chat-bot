@@ -4,6 +4,7 @@ const robotIcon = document.getElementById('robotIcon');
 const imgRobot = document.getElementById('robotFig');
 
 let validaMenu = 0; // 0 = Neutro, 1 = MenuPrincipal, 2 = SubMenu, 3 = SubSubMenu ...
+let clickCounter = 0;
 
 function abrirMenu() {
     saidaTexto.innerHTML = " "
@@ -11,11 +12,11 @@ function abrirMenu() {
         criarFalaBot(opcao)
 }
 
-function enviaEntrada() {
+function enviaEntrada(counter) {
     let entradaTexto = document.querySelector('#entradaTexto')
     let entrada = entradaTexto.value;
 
-    menuPrincipal(entrada);
+    counter > 1 ? callFalaHumana() : menuPrincipal(entrada);
     limparInput();
 
 }
@@ -27,10 +28,10 @@ let menuPrincipal = (userInput) => {
             retornoFalaBot(canalAtendimento, 1)
             break;
         case "2":
-            retornoFalaBot(canalSugestoes, 1)
+            retornoFalaBot(canalSugestoes, 2)
             break;
         case "3":
-            retornoFalaBot(canalCriticas, 1)
+            retornoFalaBot(canalCriticas, 3)
             break;
         default:
             criarFalaHuman(opcao)
@@ -69,7 +70,8 @@ botaoEnviar.addEventListener('click', enviaEntrada);
 entradaTexto.addEventListener('keydown', (event) => {
     const keyName = event.key;
     if (keyName === "Enter") {
-        enviaEntrada()
+        clickCounter++
+        enviaEntrada(clickCounter)
     }
 });
 
