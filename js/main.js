@@ -12,11 +12,11 @@ function abrirMenu() {
         criarFalaBot(opcao)
 }
 
-function enviaEntrada(counter) {
+function enviaEntrada() {
     let entradaTexto = document.querySelector('#entradaTexto')
     let entrada = entradaTexto.value;
 
-    counter > 1 ? callFalaHumana() : menuPrincipal(entrada);
+    menuPrincipal(entrada);
     limparInput();
 
 }
@@ -70,8 +70,8 @@ botaoEnviar.addEventListener('click', enviaEntrada);
 entradaTexto.addEventListener('keydown', (event) => {
     const keyName = event.key;
     if (keyName === "Enter") {
-        clickCounter++
-        enviaEntrada(clickCounter)
+        clickCounter++;
+        clickCounter > 1 ? callFalaHumana() : enviaEntrada()
     }
 });
 

@@ -20,6 +20,7 @@ function retornoFalaBot(nomeArray, itemValidacao) {
 function callFalaHumana () {
     let entr = document.querySelector('#entradaTexto').value;
     criarFalaHuman(entr)
+    limparInput();
 }
 
 const opcoesMenuInicial =
